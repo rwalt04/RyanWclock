@@ -1,0 +1,22 @@
+
+function setup() {
+  createCanvas(400, 400);
+}
+
+function draw() {
+  let value = second();
+  let m = map(value, 10, 100, 10, width);
+  ellipse(m, 50, 10, 10);
+  
+  
+  let met = minute();
+  let mt = map(met, 50,300, 0, width);
+  fill(204, 102, 0);
+  ellipse(met+50,150, 30, 30);
+  
+  
+  let hr = hour();
+  let hr2 = map(hr, 10, 100, 0, width);
+  ellipse(hr2,300, 100, 100);
+ 
+}
